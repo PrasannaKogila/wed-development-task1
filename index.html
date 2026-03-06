@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSE Courses</title>
+
+<style>
+body{
+    font-family: Arial;
+    /* use your background image */
+    background-image: url('background.jpg');  /* your saved image */
+    background-size: cover;      /* make it cover the whole page */
+    background-repeat: no-repeat; /* don’t repeat the image */
+    background-position: center;  /* center the image */
+    text-align:center;
+    color: #000; /* change text color if needed for visibility */
+}
+
+h1, p {
+    color: rgb(162, 29, 51);
+}
+
+.white-text {
+    color: white;
+}
+
+
+
+.container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+padding:20px;
+}
+
+.course{
+background:white;
+width:250px;
+padding:15px;
+border-radius:10px;
+box-shadow:0px 0px 10px gray;
+}
+
+.course img{
+width:100%;
+border-radius:10px;
+}
+
+.course a{
+display:inline-block;
+margin-top:10px;
+color:white;
+background:blue;
+padding:8px 15px;
+text-decoration:none;
+border-radius:5px;
+}
+
+.course:hover{
+transform:scale(1.05);
+transition:0.3s;
+}
+
+button{
+padding:10px 20px;
+background:green;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1 class="white-text">CSE Courses</h1>
+
+<p class="white-text">
+Computer Science Engineering (<b>CSE</b>) is one of the most popular branches of engineering.
+It focuses on the study of computers, programming languages, software development,
+<b>data structures</b>,<b> databases</b>, <b>artificial intelligence</b>, and <b> computer networks</b>.
+CSE students learn how to design software, build websites, develop applications,
+and solve complex computational problems using technology.
+</p>
+
+<div class="container">
+
+<div class="course">
+<img src="ds.jpg">
+<h2>Data Structures</h2>
+<p>Learn about stacks, queues and trees.</p>
+<a href="datastructures.html">Learn More</a>
+</div>
+
+<div class="course">
+<img src="dbms.jpg">
+<h2>Database Management</h2>
+<p>Learn how databases store and manage data.</p>
+<a href="dbms.html">Learn More</a>
+</div>
+
+<div class="course">
+<img src="os.jpg">
+<h2>Operating Systems</h2>
+<p>Learn about process and memory management.</p>
+<a href="os.html">Learn More</a>
+</div>
+
+<div class="course">
+<img src="network.jpg">
+<h2>Computer Networks</h2>
+<p>Learn about internet communication.</p>
+<a href="networks.html">Learn More</a>
+</div>
+
+<div class="course">
+<img src="ml.jpg">
+<h2>Machine Learning</h2>
+<p>Learn how computers learn from data.</p>
+<a href="ml.html">Learn More</a>
+</div>
+
+<div class="course">
+<img src="web.jpg">
+<h2>Web Development</h2>
+<p>Create websites using HTML, CSS and JavaScript.</p>
+<a href="webdev.html">Learn More</a>
+</div>
+
+</div>
+
+<br>
+
+<button onclick="showMessage()">Click Here</button>
+
+<!-- Script at the Ending -->
+
+<script>
+
+function showMessage(){
+alert("Welcome to the CSE Courses Website!");
+}
+
+</script>
+
+</body>
+</html>
